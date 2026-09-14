@@ -1,0 +1,6 @@
+
+# Large media kept local only
+*.mp4
+assets/*.mp4
+assets/images/*.mp4
+
