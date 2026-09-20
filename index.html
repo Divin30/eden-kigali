@@ -3,44 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EDEN Kigali</title>
-    <meta name="description" content="EDEN Kigali luxury residential property landing page" />
+    <title data-i18n="pageTitle">EDEN Kigali</title>
+    <meta name="description" data-i18n-content="pageDescription" content="EDEN Kigali luxury residential property landing page" />
+    <link rel="icon" type="image/png" href="assets/logo.png" />
+    <link rel="apple-touch-icon" href="assets/logo.png" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header">
-      <nav class="container nav-shell">
-        <div class="brand" aria-label="EDEN Kigali home">
-          <img src="assets/logo.png" alt="EDEN logo" />
+      <nav class="container nav-shell" aria-label="Main navigation" data-i18n-aria-label="mainNavigation">
+        <div class="brand" aria-label="EDEN Kigali home" data-i18n-aria-label="home">
+          <img src="assets/logo.png" alt="EDEN logo" data-i18n-alt="logoAlt" />
           <span>EDEN Kigali</span>
         </div>
 
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation" data-i18n-aria-label="toggleNavigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-panel">
         <ul class="nav-links">
-          <li><a href="#project">Project</a></li>
-          <li><a href="#plans">Plans</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#project" data-i18n="project">Project</a></li>
+          <li><a href="#plans" data-i18n="plans">Plans</a></li>
+          <li><a href="#gallery" data-i18n="gallery">Gallery</a></li>
+          <li><a href="#contact" data-i18n="contact">Contact</a></li>
           <li class="nav-language-item">
-            <label class="language-picker" aria-label="Select language">
-              <span class="lang-icon" aria-hidden="true">🌐</span>
-              <select aria-label="Language selector">
-                <option value="en" selected>EN</option>
-                <option value="fr">FR</option>
-                <option value="sw">KIS</option>
-                <option value="ar">AR</option>
+            <label class="language-picker" aria-label="Select language" data-i18n-aria-label="selectLanguage">
+              <span class="lang-icon" aria-hidden="true">◎</span>
+              <select aria-label="Language selector" data-i18n-aria-label="languageSelector">
+                <option value="en" selected>English</option>
+                <option value="fr">Français</option>
+                <option value="sw">Kiswahili</option>
+                <option value="ar">العربية</option>
                 <option value="zh">中文</option>
               </select>
+              <span class="language-chevron" aria-hidden="true">⌄</span>
             </label>
           </li>
         </ul>
 
-        <a href="#contact" class="nav-cta">Book a viewing</a>
+        <a href="#contact" class="nav-cta" data-i18n="bookViewing">Book a viewing</a>
       </nav>
     </header>
 
     <main>
-      <section class="hero" aria-label="EDEN Kigali project video">
-        <video autoplay muted loop playsinline poster="assets/images/hero-poster.jpg">
+      <section class="hero" aria-label="EDEN Kigali project video" data-i18n-aria-label="projectVideo">
+        <video autoplay muted loop playsinline poster=>
           <source src="assets/hero-video.mp4" type="video/mp4" />
         </video>
       </section>
@@ -53,33 +63,33 @@
 
       <section id="plans" class="section plans">
         <div class="container">
-          <p class="eyebrow center">Apartment plans</p>
-          <h2 class="center">Choose your home</h2>
+          <p class="eyebrow center" data-i18n="apartmentPlans">Apartment plans</p>
+          <h2 class="center" data-i18n="chooseHome">Choose your home</h2>
           <div class="plan-grid">
             <article class="plan-card">
-              <img src="assets/images/plans/studio.jpg" alt="Studio apartment" />
-              <h3>Studio</h3>
-              <p>Compact and refined living.</p>
+              <img src="assets/images/plans/studio.jpg" alt="Studio apartment" data-i18n-alt="studioAlt" />
+              <h3 data-i18n="studio">Studio</h3>
+              <p data-i18n="studioDescription">Compact and refined living.</p>
             </article>
             <article class="plan-card">
-              <img src="assets/images/plans/1br.jpg" alt="1 bedroom apartment" />
-              <h3>1 BR</h3>
-              <p>Comfortable, functional, and elegant.</p>
+              <img src="assets/images/plans/1br.jpg" alt="1 bedroom apartment" data-i18n-alt="oneBedroomAlt" />
+              <h3 data-i18n="oneBedroom">1 BR</h3>
+              <p data-i18n="oneBedroomDescription">Comfortable, functional, and elegant.</p>
             </article>
             <article class="plan-card">
-              <img src="assets/images/plans/2br.jpg" alt="2 bedroom apartment" />
-              <h3>2 BR</h3>
-              <p>Room for family living and entertaining.</p>
+              <img src="assets/images/plans/2br.jpg" alt="2 bedroom apartment" data-i18n-alt="twoBedroomAlt" />
+              <h3 data-i18n="twoBedroom">2 BR</h3>
+              <p data-i18n="twoBedroomDescription">Room for family living and entertaining.</p>
             </article>
             <article class="plan-card">
-              <img src="assets/images/plans/3br.jpg" alt="3 bedroom apartment" />
-              <h3>3 BR</h3>
-              <p>Spacious luxury with flexibility.</p>
+              <img src="assets/images/plans/3br.jpg" alt="3 bedroom apartment" data-i18n-alt="threeBedroomAlt" />
+              <h3 data-i18n="threeBedroom">3 BR</h3>
+              <p data-i18n="threeBedroomDescription">Spacious luxury with flexibility.</p>
             </article>
             <article class="plan-card">
-              <img src="assets/images/plans/penthouse.jpg" alt="Penthouse apartment" />
-              <h3>Penthouse</h3>
-              <p>Signature living with sweeping views.</p>
+              <img src="assets/images/plans/penthouse.jpg" alt="Penthouse apartment" data-i18n-alt="penthouseAlt" />
+              <h3 data-i18n="penthouse">Penthouse</h3>
+              <p data-i18n="penthouseDescription">Signature living with sweeping views.</p>
             </article>
           </div>
         </div>
@@ -87,13 +97,13 @@
 
       <section id="gallery" class="section gallery">
         <div class="container">
-          <p class="eyebrow center">Gallery</p>
-          <h2 class="center">A glimpse into the lifestyle</h2>
+          <p class="eyebrow center" data-i18n="gallery">Gallery</p>
+          <h2 class="center" data-i18n="lifestyle">A glimpse into the lifestyle</h2>
           <div class="gallery-grid">
-            <img class="gallery-item tall" src="assets/images/project-main.jpg" alt="EDEN Kigali facade" />
-            <img class="gallery-item" src="assets/images/plans/studio.jpg" alt="EDEN Kigali studio view" />
-            <img class="gallery-item" src="assets/images/plans/1br.jpg" alt="EDEN Kigali apartment detail" />
-            <img class="gallery-item wide" src="assets/images/hero-poster.jpg" alt="EDEN Kigali building exterior" />
+            <img class="gallery-item tall" src="assets/images/project-main.jpg" alt="EDEN Kigali facade" data-i18n-alt="facadeAlt" />
+            <img class="gallery-item" src="assets/images/plans/studio.jpg" alt="EDEN Kigali studio view" data-i18n-alt="studioViewAlt" />
+            <img class="gallery-item" src="assets/images/plans/1br.jpg" alt="EDEN Kigali apartment detail" data-i18n-alt="apartmentDetailAlt" />
+            <img class="gallery-item wide" src="assets/images/hero-poster.jpg" alt="EDEN Kigali building exterior" data-i18n-alt="buildingAlt" />
           </div>
         </div>
       </section>
@@ -103,18 +113,46 @@
       <div class="container footer-grid">
         <div>
           <h3>EDEN Kigali</h3>
-          <p>Luxury residences for modern Kigali living.</p>
+          <p data-i18n="footerDescription">Luxury residences for modern Kigali living.</p>
         </div>
         <div>
-          <h4>Contact</h4>
-          <p>+250 XXX XXX XXX</p>
-          <p>hello@edenkigali.rw</p>
+          <h4 data-i18n="contact">Contact</h4>
+          <p>+250 793 524 003</p>
+          <p>sales.edenrwanda@gmail.com</p>
         </div>
         <div>
-          <h4>Visit</h4>
-          <p>Kigali, Rwanda</p>
-          <p>Schedule a private tour</p>
+          <h4 data-i18n="visit">Visit</h4>
+          <a
+            class="location-link"
+            href="https://www.google.com/maps/search/?api=1&query=Eden+Apartment%2C+3325%2B7M3%2C+Kigali"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open Eden Apartment in Google Maps"
+            data-i18n-aria-label="locationMapLabel"
+          >
+            <strong data-i18n="locationName">Eden Apartment</strong>
+            <span data-i18n="location">3325+7M3, Kigali, Rwanda</span>
+          </a>
+          <p data-i18n="privateTour">Schedule a private tour</p>
+          <a
+            class="social-link"
+            href="https://www.instagram.com/edenrwanda.sales?stkn=MTM0dHFqaXk2dHVpeg=="
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Follow EDEN Rwanda Sales on Instagram"
+            data-i18n-aria-label="instagramLabel"
+          >
+            <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2" />
+              <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2" />
+              <circle cx="17.5" cy="6.5" r="1.25" fill="currentColor" />
+            </svg>
+            <span data-i18n="instagram">Instagram</span>
+          </a>
         </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="copyright">© 2026 EDEN KIGALI APARTMENT · KIGALI, RWANDA.</p>
       </div>
     </footer>
 
