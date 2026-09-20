@@ -26,7 +26,8 @@
 
         <div class="nav-panel">
         <ul class="nav-links">
-          <li><a href="#project" data-i18n="project">Project</a></li>
+          <li><a href="#home" data-i18n="homeNav">Home</a></li>
+          <li><a href="#about" data-i18n="about">About</a></li>
           <li><a href="#plans" data-i18n="plans">Plans</a></li>
           <li><a href="#gallery" data-i18n="gallery">Gallery</a></li>
           <li><a href="#contact" data-i18n="contact">Contact</a></li>
@@ -50,15 +51,30 @@
     </header>
 
     <main>
-      <section class="hero" aria-label="EDEN Kigali project video" data-i18n-aria-label="projectVideo">
+      <section id="home" class="hero" aria-label="EDEN Kigali project video" data-i18n-aria-label="projectVideo">
         <video autoplay muted loop playsinline preload="none" poster="assets/images/hero-poster.jpg">
           <source data-src="assets/hero-video.mp4" type="video/mp4" />
         </video>
       </section>
 
-      <section id="project" class="section project">
-        <div class="container project-showcase">
-        
+      <section id="about" class="section about">
+        <div class="container about-content">
+          <div class="about-media">
+            <img
+              src="assets/images/about-eden.jpg"
+              alt="EDEN Kigali residence"
+              data-i18n-alt="aboutImageAlt"
+            />
+          </div>
+          <div class="about-copy">
+            <p class="eyebrow about-eyebrow" data-i18n="aboutEyebrow">About EDEN Kigali</p>
+            <p class="about-lead" data-i18n="aboutIntro">
+              EDEN Kigali is a visionary residential development in the heart of Rwanda’s capital, offering a unique blend of nature, comfort, and modern living. Inspired by the idea of an “Eden,” it promotes eco-friendly living through sustainable materials and energy-efficient design. From minimalist studios to lush penthouse garden suites, EDEN Kigali reflects both Rwanda’s cultural richness and contemporary global aesthetics.
+            </p>
+            <p data-i18n="aboutCommunity">
+              More than just a place to live, EDEN Kigali fosters a sense of community and belonging. Residents wake up to greenery, enjoy local coffee, and connect with warm, welcoming neighbors. Whether you’re an ambitious entrepreneur, an expatriate professional, or a local family, EDEN Kigali invites you to experience Kigali’s green lifestyle—where urban life and nature exist in harmony.
+            </p>
+          </div>
         </div>
       </section>
 
