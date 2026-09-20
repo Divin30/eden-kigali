@@ -5,6 +5,31 @@ document.addEventListener('DOMContentLoaded', () => {
   const navToggle = document.querySelector('.nav-toggle');
   const navLinks = document.querySelectorAll('.nav-links a');
   const languageSelect = document.querySelector('.language-picker select');
+  const heroVideo = document.querySelector('.hero video');
+
+  const loadHeroVideo = () => {
+    if (!heroVideo) return;
+
+    const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+    const isDataSaverEnabled = connection && connection.saveData;
+    const isSlowConnection = connection && ['slow-2g', '2g'].includes(connection.effectiveType);
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    if (isDataSaverEnabled || isSlowConnection || prefersReducedMotion) {
+      heroVideo.removeAttribute('autoplay');
+      heroVideo.preload = 'none';
+      heroVideo.load();
+      return;
+    }
+
+    const source = heroVideo.querySelector('source[data-src]');
+    if (!source) return;
+
+    source.src = source.dataset.src;
+    source.removeAttribute('data-src');
+    heroVideo.preload = 'metadata';
+    heroVideo.load();
+  };
 
   const translations = {
     en: {
@@ -321,6 +346,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  loadHeroVideo();
   updateHeaderState();
   window.addEventListener('scroll', updateHeaderState, { passive: true });
   window.addEventListener('resize', () => {

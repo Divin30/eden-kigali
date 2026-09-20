@@ -414,6 +414,11 @@ img {
   transition: opacity 0.2s ease;
 }
 
+.contact-link {
+  display: inline-block;
+  padding: 0.1rem 0;
+}
+
 .site-footer a:hover,
 .site-footer a:focus-visible {
   opacity: 0.8;

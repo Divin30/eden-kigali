@@ -7,6 +7,7 @@
     <meta name="description" data-i18n-content="pageDescription" content="EDEN Kigali luxury residential property landing page" />
     <link rel="icon" type="image/png" href="assets/logo.png" />
     <link rel="apple-touch-icon" href="assets/logo.png" />
+    <link rel="preload" as="image" href="assets/images/hero-poster.jpg" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -50,8 +51,8 @@
 
     <main>
       <section class="hero" aria-label="EDEN Kigali project video" data-i18n-aria-label="projectVideo">
-        <video autoplay muted loop playsinline poster=>
-          <source src="assets/hero-video.mp4" type="video/mp4" />
+        <video autoplay muted loop playsinline preload="none" poster="assets/images/hero-poster.jpg">
+          <source data-src="assets/hero-video.mp4" type="video/mp4" />
         </video>
       </section>
 
@@ -117,8 +118,12 @@
         </div>
         <div>
           <h4 data-i18n="contact">Contact</h4>
-          <p>+250 793 524 003</p>
-          <p>sales.edenrwanda@gmail.com</p>
+          <p>
+            <a class="contact-link" href="tel:+250793524003">+250 793 524 003</a>
+          </p>
+          <p>
+            <a class="contact-link" href="mailto:sales.edenrwanda@gmail.com">sales.edenrwanda@gmail.com</a>
+          </p>
         </div>
         <div>
           <h4 data-i18n="visit">Visit</h4>
