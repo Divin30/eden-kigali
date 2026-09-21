@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title data-i18n="aboutPageTitle">About EDEN Kigali</title>
-    <meta name="description" data-i18n-content="aboutPageDescription" content="Discover the EDEN Kigali vision, community, and green lifestyle." />
+    <title data-i18n="bookingPageTitle">Book a Viewing | EDEN Kigali</title>
+    <meta name="description" data-i18n-content="bookingPageDescription" content="Book a private viewing at EDEN Kigali through WhatsApp." />
     <link rel="icon" type="image/png" href="assets/logo.png" />
     <link rel="apple-touch-icon" href="assets/logo.png" />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body class="about-page">
+  <body class="booking-page">
     <header class="site-header">
       <nav class="container nav-shell" aria-label="Main navigation" data-i18n-aria-label="mainNavigation">
         <a class="brand" href="index.html#home" aria-label="EDEN Kigali home" data-i18n-aria-label="home">
@@ -45,28 +45,26 @@
       </nav>
     </header>
 
-    <main>
-      <section class="about-page-hero">
-        <div class="container about-page-hero-content">
-          <p class="eyebrow" data-i18n="aboutEyebrow">About EDEN Kigali</p>
-          <h1 data-i18n="aboutHeadline">Where nature meets modern living.</h1>
-          <p data-i18n="aboutPageIntro">A new standard of green, refined living in the heart of Kigali.</p>
-        </div>
-      </section>
-      <section class="section about about-page-section">
-        <div class="container about-content">
-          <div class="about-media">
-            <img src="assets/images/about-eden.jpg" alt="EDEN Kigali residence" data-i18n-alt="aboutImageAlt" />
-            <div class="about-media-caption"><span class="about-mark">EDEN</span><span data-i18n="aboutImageCaption">Green refined living</span></div>
-            <span class="about-location" data-i18n="aboutLocation">KIGALI · RWANDA</span>
-          </div>
-          <div class="about-copy">
-            <p class="eyebrow about-eyebrow" data-i18n="aboutEyebrow">About EDEN Kigali</p>
-            <h2 data-i18n="aboutHeadline">Where nature meets modern living.</h2>
-            <p class="about-lead" data-i18n="aboutIntro">EDEN Kigali is a visionary residential development in the heart of Rwanda’s capital, offering a unique blend of nature, comfort, and modern living. Inspired by the idea of an “Eden,” it promotes eco-friendly living through sustainable materials and energy-efficient design. From minimalist studios to lush penthouse garden suites, EDEN Kigali reflects both Rwanda’s cultural richness and contemporary global aesthetics.</p>
-            <p data-i18n="aboutCommunity">More than just a place to live, EDEN Kigali fosters a sense of community and belonging. Residents wake up to greenery, enjoy local coffee, and connect with warm, welcoming neighbors. Whether you’re an ambitious entrepreneur, an expatriate professional, or a local family, EDEN Kigali invites you to experience Kigali’s green lifestyle—where urban life and nature exist in harmony.</p>
-          </div>
-        </div>
+    <main class="booking-main">
+      <section class="booking-card" aria-labelledby="booking-title">
+        <p class="eyebrow" data-i18n="bookingEyebrow">Private viewings</p>
+        <h1 id="booking-title" data-i18n="bookingTitle">The fastest way to book</h1>
+        <p data-i18n="bookingDescription">Chat with our EDEN Kigali team directly on WhatsApp. We will help you choose the perfect home and arrange your private viewing.</p>
+        <a
+          class="whatsapp-button"
+          href="https://wa.me/250793524003?text=Hello%20EDEN%20Kigali%2C%20I%20would%20like%20to%20book%20a%20private%20viewing."
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Chat with EDEN Kigali on WhatsApp"
+          data-i18n-aria-label="whatsappLabel"
+        >
+          <svg class="whatsapp-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20 11.5a8 8 0 0 1-11.8 7.1L4 20l1.4-4A8 8 0 1 1 20 11.5Z" />
+            <path d="M9.2 8.5c.2-.4.4-.4.7-.4h.5c.2 0 .4.1.5.4l.6 1.4c.1.2.1.4-.1.6l-.5.6c-.1.1-.1.3 0 .4.5.9 1.2 1.6 2.1 2.1.2.1.3.1.4 0l.6-.5c.2-.2.4-.2.6-.1l1.4.6c.3.1.4.3.4.5v.5c0 .3-.1.5-.4.7-.5.3-1.1.5-1.7.3-1.2-.3-2.4-1-3.4-2s-1.7-2.2-2-3.4c-.2-.6 0-1.2.3-1.7Z" />
+          </svg>
+          <span data-i18n="whatsappButton">Chat on WhatsApp</span>
+        </a>
+        <p class="booking-phone"><span data-i18n="orCall">Or call us directly at:</span> <a href="tel:+250793524003">+250 793 524 003</a></p>
       </section>
     </main>
 

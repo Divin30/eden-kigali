@@ -37,6 +37,14 @@ document.addEventListener('DOMContentLoaded', () => {
       aboutPageTitle: 'About EDEN Kigali',
       aboutPageDescription: 'Discover the EDEN Kigali vision, community, and green lifestyle.',
       aboutPageIntro: 'A new standard of green, refined living in the heart of Kigali.',
+      bookingPageTitle: 'Book a Viewing | EDEN Kigali',
+      bookingPageDescription: 'Book a private viewing at EDEN Kigali through WhatsApp.',
+      bookingEyebrow: 'Private viewings',
+      bookingTitle: 'The fastest way to book',
+      bookingDescription: 'Chat with our EDEN Kigali team directly on WhatsApp. We will help you choose the perfect home and arrange your private viewing.',
+      whatsappButton: 'Chat on WhatsApp',
+      whatsappLabel: 'Chat with EDEN Kigali on WhatsApp',
+      orCall: 'Or call us directly at:',
       mainNavigation: 'Main navigation',
       home: 'EDEN Kigali home',
       homeNav: 'Home',
@@ -95,6 +103,14 @@ document.addEventListener('DOMContentLoaded', () => {
       aboutPageTitle: 'À propos d’EDEN Kigali',
       aboutPageDescription: 'Découvrez la vision, la communauté et le mode de vie vert d’EDEN Kigali.',
       aboutPageIntro: 'Un nouvel art de vivre vert et raffiné au cœur de Kigali.',
+      bookingPageTitle: 'Réserver une visite | EDEN Kigali',
+      bookingPageDescription: 'Réservez une visite privée à EDEN Kigali via WhatsApp.',
+      bookingEyebrow: 'Visites privées',
+      bookingTitle: 'La façon la plus rapide de réserver',
+      bookingDescription: 'Discutez directement avec l’équipe EDEN Kigali sur WhatsApp. Nous vous aiderons à choisir le logement idéal et à organiser votre visite privée.',
+      whatsappButton: 'Discuter sur WhatsApp',
+      whatsappLabel: 'Discuter avec EDEN Kigali sur WhatsApp',
+      orCall: 'Ou appelez-nous directement au :',
       mainNavigation: 'Navigation principale',
       home: 'Accueil EDEN Kigali',
       homeNav: 'Accueil',
@@ -153,6 +169,14 @@ document.addEventListener('DOMContentLoaded', () => {
       aboutPageTitle: 'Kuhusu EDEN Kigali',
       aboutPageDescription: 'Gundua maono, jamii na maisha ya kijani ya EDEN Kigali.',
       aboutPageIntro: 'Kiwango kipya cha maisha ya kijani na ustaarabu katikati ya Kigali.',
+      bookingPageTitle: 'Weka miadi ya kutembelea | EDEN Kigali',
+      bookingPageDescription: 'Weka miadi ya kutembelea EDEN Kigali kupitia WhatsApp.',
+      bookingEyebrow: 'Ziara za kibinafsi',
+      bookingTitle: 'Njia ya haraka zaidi ya kuweka miadi',
+      bookingDescription: 'Zungumza moja kwa moja na timu ya EDEN Kigali kwenye WhatsApp. Tutakusaidia kuchagua nyumba inayofaa na kupanga ziara yako ya kibinafsi.',
+      whatsappButton: 'Ongea kwenye WhatsApp',
+      whatsappLabel: 'Ongea na EDEN Kigali kwenye WhatsApp',
+      orCall: 'Au tupigie moja kwa moja:',
       mainNavigation: 'Menyu kuu',
       home: 'Mwanzo wa EDEN Kigali',
       homeNav: 'Mwanzo',
@@ -211,6 +235,14 @@ document.addEventListener('DOMContentLoaded', () => {
       aboutPageTitle: 'عن إيدن كيغالي',
       aboutPageDescription: 'اكتشف رؤية إيدن كيغالي ومجتمعه وأسلوب حياته الأخضر.',
       aboutPageIntro: 'معيار جديد لحياة خضراء راقية في قلب كيغالي.',
+      bookingPageTitle: 'احجز زيارة | إيدن كيغالي',
+      bookingPageDescription: 'احجز زيارة خاصة في إيدن كيغالي عبر واتساب.',
+      bookingEyebrow: 'زيارات خاصة',
+      bookingTitle: 'أسرع طريقة للحجز',
+      bookingDescription: 'تحدث مباشرة مع فريق إيدن كيغالي عبر واتساب. سنساعدك في اختيار المنزل المثالي وترتيب زيارتك الخاصة.',
+      whatsappButton: 'الدردشة عبر واتساب',
+      whatsappLabel: 'الدردشة مع إيدن كيغالي عبر واتساب',
+      orCall: 'أو اتصل بنا مباشرة على:',
       mainNavigation: 'التنقل الرئيسي',
       home: 'الصفحة الرئيسية لإيدن كيغالي',
       homeNav: 'الرئيسية',
@@ -269,6 +301,14 @@ document.addEventListener('DOMContentLoaded', () => {
       aboutPageTitle: '关于 EDEN 基加利',
       aboutPageDescription: '了解 EDEN 基加利的愿景、社区和绿色生活方式。',
       aboutPageIntro: '位于基加利中心的绿色精致生活新标准。',
+      bookingPageTitle: '预约看房 | EDEN 基加利',
+      bookingPageDescription: '通过 WhatsApp 预约参观 EDEN 基加利。',
+      bookingEyebrow: '私人参观',
+      bookingTitle: '最快的预约方式',
+      bookingDescription: '直接在 WhatsApp 联系 EDEN 基加利团队。我们将帮助您选择理想住宅并安排私人参观。',
+      whatsappButton: '在 WhatsApp 聊天',
+      whatsappLabel: '在 WhatsApp 联系 EDEN 基加利',
+      orCall: '或直接致电：',
       mainNavigation: '主导航',
       home: 'EDEN 基加利主页',
       homeNav: '首页',
@@ -349,9 +389,13 @@ document.addEventListener('DOMContentLoaded', () => {
       if (dictionary[key]) element.setAttribute('content', dictionary[key]);
     });
 
-    document.title = document.body.classList.contains('about-page')
-      ? dictionary.aboutPageTitle
-      : dictionary.pageTitle;
+    if (document.body.classList.contains('about-page')) {
+      document.title = dictionary.aboutPageTitle;
+    } else if (document.body.classList.contains('booking-page')) {
+      document.title = dictionary.bookingPageTitle;
+    } else {
+      document.title = dictionary.pageTitle;
+    }
     localStorage.setItem('eden-language', language);
   };
 
