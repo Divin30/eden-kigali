@@ -597,7 +597,19 @@ img {
 }
 
 .plan-card h3 {
-  margin: 1rem 1rem 0.25rem;
+  margin: 0;
+}
+
+.plan-title {
+  display: inline-block;
+  margin: 1rem 1rem 0.35rem !important;
+  padding-bottom: 0.35rem;
+  border-bottom: 2px solid #d9b58b;
+  color: var(--ink);
+  font-size: 1.12rem;
+  font-weight: 700;
+  letter-spacing: 0.015em;
+  line-height: 1.25;
 }
 
 .plan-card p {
