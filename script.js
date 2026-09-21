@@ -34,6 +34,9 @@ document.addEventListener('DOMContentLoaded', () => {
     en: {
       pageTitle: 'EDEN Kigali',
       pageDescription: 'EDEN Kigali luxury residential property landing page',
+      aboutPageTitle: 'About EDEN Kigali',
+      aboutPageDescription: 'Discover the EDEN Kigali vision, community, and green lifestyle.',
+      aboutPageIntro: 'A new standard of green, refined living in the heart of Kigali.',
       mainNavigation: 'Main navigation',
       home: 'EDEN Kigali home',
       homeNav: 'Home',
@@ -41,6 +44,9 @@ document.addEventListener('DOMContentLoaded', () => {
       toggleNavigation: 'Toggle navigation',
       about: 'About',
       aboutEyebrow: 'About EDEN Kigali',
+      aboutHeadline: 'Where nature meets modern living.',
+      aboutImageCaption: 'Green refined living',
+      aboutLocation: 'KIGALI · RWANDA',
       aboutImageAlt: 'EDEN Kigali residence',
       aboutIntro: 'EDEN Kigali is a visionary residential development in the heart of Rwanda’s capital, offering a unique blend of nature, comfort, and modern living. Inspired by the idea of an “Eden,” it promotes eco-friendly living through sustainable materials and energy-efficient design. From minimalist studios to lush penthouse garden suites, EDEN Kigali reflects both Rwanda’s cultural richness and contemporary global aesthetics.',
       aboutCommunity: 'More than just a place to live, EDEN Kigali fosters a sense of community and belonging. Residents wake up to greenery, enjoy local coffee, and connect with warm, welcoming neighbors. Whether you’re an ambitious entrepreneur, an expatriate professional, or a local family, EDEN Kigali invites you to experience Kigali’s green lifestyle—where urban life and nature exist in harmony.',
@@ -86,6 +92,9 @@ document.addEventListener('DOMContentLoaded', () => {
     fr: {
       pageTitle: 'EDEN Kigali',
       pageDescription: 'Page de présentation des résidences de luxe EDEN Kigali',
+      aboutPageTitle: 'À propos d’EDEN Kigali',
+      aboutPageDescription: 'Découvrez la vision, la communauté et le mode de vie vert d’EDEN Kigali.',
+      aboutPageIntro: 'Un nouvel art de vivre vert et raffiné au cœur de Kigali.',
       mainNavigation: 'Navigation principale',
       home: 'Accueil EDEN Kigali',
       homeNav: 'Accueil',
@@ -93,6 +102,9 @@ document.addEventListener('DOMContentLoaded', () => {
       toggleNavigation: 'Ouvrir ou fermer la navigation',
       about: 'À propos',
       aboutEyebrow: 'À propos d’EDEN Kigali',
+      aboutHeadline: 'Là où la nature rencontre la vie moderne.',
+      aboutImageCaption: 'Un art de vivre vert et raffiné',
+      aboutLocation: 'KIGALI · RWANDA',
       aboutImageAlt: 'Résidence EDEN Kigali',
       aboutIntro: 'EDEN Kigali est un projet résidentiel visionnaire au cœur de la capitale du Rwanda, offrant un équilibre unique entre nature, confort et vie moderne. Inspiré par l’idée d’un « Eden », il favorise un mode de vie écologique grâce à des matériaux durables et une conception économe en énergie. Des studios minimalistes aux suites-jardins luxueuses des penthouses, EDEN Kigali reflète la richesse culturelle du Rwanda et l’esthétique contemporaine internationale.',
       aboutCommunity: 'Bien plus qu’un lieu de vie, EDEN Kigali crée un véritable sentiment de communauté et d’appartenance. Les résidents se réveillent entourés de verdure, savourent le café local et rencontrent des voisins chaleureux. Que vous soyez entrepreneur ambitieux, professionnel expatrié ou famille locale, EDEN Kigali vous invite à découvrir le mode de vie vert de Kigali, où la ville et la nature vivent en harmonie.',
@@ -138,6 +150,9 @@ document.addEventListener('DOMContentLoaded', () => {
     sw: {
       pageTitle: 'EDEN Kigali',
       pageDescription: 'Ukurasa wa makazi ya kifahari wa EDEN Kigali',
+      aboutPageTitle: 'Kuhusu EDEN Kigali',
+      aboutPageDescription: 'Gundua maono, jamii na maisha ya kijani ya EDEN Kigali.',
+      aboutPageIntro: 'Kiwango kipya cha maisha ya kijani na ustaarabu katikati ya Kigali.',
       mainNavigation: 'Menyu kuu',
       home: 'Mwanzo wa EDEN Kigali',
       homeNav: 'Mwanzo',
@@ -145,6 +160,9 @@ document.addEventListener('DOMContentLoaded', () => {
       toggleNavigation: 'Fungua au funga menyu',
       about: 'Kuhusu',
       aboutEyebrow: 'Kuhusu EDEN Kigali',
+      aboutHeadline: 'Ambapo asili hukutana na maisha ya kisasa.',
+      aboutImageCaption: 'Maisha ya kijani yenye ustaarabu',
+      aboutLocation: 'KIGALI · RWANDA',
       aboutImageAlt: 'Makazi ya EDEN Kigali',
       aboutIntro: 'EDEN Kigali ni mradi wa makazi wa kipekee katikati ya mji mkuu wa Rwanda, unaochanganya asili, starehe na maisha ya kisasa. Ukiongozwa na wazo la “Edeni,” unahamasisha maisha rafiki kwa mazingira kupitia vifaa endelevu na usanifu unaotumia nishati kwa ufanisi. Kuanzia studio rahisi hadi penthouse zenye bustani, EDEN Kigali unaonyesha utajiri wa utamaduni wa Rwanda pamoja na uzuri wa kisasa wa dunia.',
       aboutCommunity: 'EDEN Kigali si mahali pa kuishi tu; unajenga hisia ya jamii na umiliki. Wakazi huamka wakizungukwa na kijani, hufurahia kahawa ya hapa na kuungana na majirani wachangamfu. Iwe wewe ni mjasiriamali mwenye malengo, mtaalamu kutoka nje au familia ya hapa, EDEN Kigali inakualika ufurahie maisha ya kijani ya Kigali, ambako mji na asili vinaishi kwa maelewano.',
@@ -190,6 +208,9 @@ document.addEventListener('DOMContentLoaded', () => {
     ar: {
       pageTitle: 'إيدن كيغالي',
       pageDescription: 'الصفحة التعريفية للمساكن الفاخرة إيدن كيغالي',
+      aboutPageTitle: 'عن إيدن كيغالي',
+      aboutPageDescription: 'اكتشف رؤية إيدن كيغالي ومجتمعه وأسلوب حياته الأخضر.',
+      aboutPageIntro: 'معيار جديد لحياة خضراء راقية في قلب كيغالي.',
       mainNavigation: 'التنقل الرئيسي',
       home: 'الصفحة الرئيسية لإيدن كيغالي',
       homeNav: 'الرئيسية',
@@ -197,6 +218,9 @@ document.addEventListener('DOMContentLoaded', () => {
       toggleNavigation: 'فتح أو إغلاق القائمة',
       about: 'عن إيدن',
       aboutEyebrow: 'عن إيدن كيغالي',
+      aboutHeadline: 'حيث تلتقي الطبيعة بالحياة العصرية.',
+      aboutImageCaption: 'حياة خضراء راقية',
+      aboutLocation: 'كيغالي · رواندا',
       aboutImageAlt: 'مساكن إيدن كيغالي',
       aboutIntro: 'إيدن كيغالي هو مشروع سكني طموح في قلب عاصمة رواندا، يجمع بشكل فريد بين الطبيعة والراحة والحياة العصرية. مستوحى من فكرة «الجنة»، يشجع على الحياة الصديقة للبيئة من خلال المواد المستدامة والتصميم الموفر للطاقة. من الاستوديوهات البسيطة إلى أجنحة البنتهاوس الفاخرة ذات الحدائق، يعكس إيدن كيغالي غنى ثقافة رواندا وجماليات العالم المعاصر.',
       aboutCommunity: 'إيدن كيغالي أكثر من مجرد مكان للسكن؛ فهو يعزز الشعور بالمجتمع والانتماء. يستيقظ السكان وسط الخضرة، ويستمتعون بالقهوة المحلية، ويتواصلون مع جيران ودودين. سواء كنت رائد أعمال طموحاً أو مهنياً مغترباً أو عائلة محلية، يدعوك إيدن كيغالي لاكتشاف أسلوب الحياة الأخضر في كيغالي، حيث تعيش المدينة والطبيعة في انسجام.',
@@ -242,6 +266,9 @@ document.addEventListener('DOMContentLoaded', () => {
     zh: {
       pageTitle: 'EDEN 基加利',
       pageDescription: 'EDEN 基加利豪华住宅项目介绍页',
+      aboutPageTitle: '关于 EDEN 基加利',
+      aboutPageDescription: '了解 EDEN 基加利的愿景、社区和绿色生活方式。',
+      aboutPageIntro: '位于基加利中心的绿色精致生活新标准。',
       mainNavigation: '主导航',
       home: 'EDEN 基加利主页',
       homeNav: '首页',
@@ -249,6 +276,9 @@ document.addEventListener('DOMContentLoaded', () => {
       toggleNavigation: '打开或关闭导航',
       about: '关于我们',
       aboutEyebrow: '关于 EDEN 基加利',
+      aboutHeadline: '让自然与现代生活相遇。',
+      aboutImageCaption: '绿色而精致的生活',
+      aboutLocation: '基加利 · 卢旺达',
       aboutImageAlt: 'EDEN 基加利住宅',
       aboutIntro: 'EDEN 基加利是位于卢旺达首都中心的前瞻性住宅项目，将自然、舒适与现代生活融为一体。项目以“伊甸园”为灵感，通过可持续材料和节能设计倡导环保生活。从极简单间公寓到拥有花园的豪华顶层套房，EDEN 基加利兼具卢旺达丰富的文化底蕴与当代国际美学。',
       aboutCommunity: 'EDEN 基加利不仅是居住的地方，更营造了社区感和归属感。居民在绿意中醒来，享用当地咖啡，与热情友好的邻居交流。无论您是充满抱负的企业家、外籍专业人士，还是本地家庭，EDEN 基加利都诚邀您体验基加利的绿色生活方式，让城市与自然和谐共存。',
@@ -319,7 +349,9 @@ document.addEventListener('DOMContentLoaded', () => {
       if (dictionary[key]) element.setAttribute('content', dictionary[key]);
     });
 
-    document.title = dictionary.pageTitle;
+    document.title = document.body.classList.contains('about-page')
+      ? dictionary.aboutPageTitle
+      : dictionary.pageTitle;
     localStorage.setItem('eden-language', language);
   };
 
